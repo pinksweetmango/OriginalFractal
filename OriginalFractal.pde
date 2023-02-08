@@ -1,6 +1,6 @@
 public void setup() {
   background(171, 219, 227);
-  size(500, 500);
+  size(700, 600);
   noStroke();
 }
 
@@ -23,14 +23,14 @@ public void draw() {
   arc(167, 400, 20, 10, PI+QUARTER_PI, TWO_PI);
   myFrac(250, 250, 480);
   myFrac2(250, 250, 480);
-  myFrac1(0, 210, 500, 250);
+  myFrac1(0, 210, 700, 250);
   myFrac(250, 270, 200);
   myFrac2(250, 270, 200);
   myFrac(260, 270, 120);
   myFrac2(260, 270, 120);
   myFrac(370, 270, 60);
   myFrac2(370, 270, 60);
-  myFrac1(0, 230, 500, 250);
+  myFrac1(0, 230, 700, 250);
 }
 public void myFrac(int x, int y, int siz) {
   if (siz > 5) {
@@ -56,11 +56,11 @@ public void myFrac2(int x, int y, int siz) {
   ellipse(x+x/5, y-y/20, siz/5, siz/7);
 
   stroke(139, 69, 19);
-strokeWeight(3);
-line(x+x/5, y-y/20, x+x/5, y-y/20+y/20);
-strokeWeight(1);
+  strokeWeight(3);
+  line(x+x/5, y-y/20, x+x/5, y-y/20+y/20);
+  strokeWeight(1);
   stroke(0);
-//  rect(x+x/5, y-y/20, siz/20, siz/6);
+  //  rect(x+x/5, y-y/20, siz/20, siz/6);
   fill(0, 204, 102);
   ellipse(x+x/20, y, siz/20, siz/40);
 }
